@@ -29,11 +29,11 @@ async.series([
   },
   (done)=>{
     console.log('第二次执行');
-    done(null,'2');
+    done(true,'2');
   },
   (done)=>{
     console.log('第三次执行');
-    done(true,'3');
+    done(null,'3');
   }
 ],(err,result)=>{
   if(err){
